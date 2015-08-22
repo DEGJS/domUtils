@@ -1,6 +1,7 @@
 {
   "name": "domUtils",
   "jspm": {
-  	"format": "es6"
+  	"format": "es6",
+  	"registry": "jspm"
   }
 }
