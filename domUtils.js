@@ -32,6 +32,12 @@ let domUtils = {
         return false;
     },
 
+    isElement: function(o) {
+        return (
+            typeof HTMLElement === 'object' ? o instanceof HTMLElement : o && typeof o === 'object' && o !== null && o.nodeType === 1 && typeof o.nodeName==='string'
+        ); 
+    },
+
     createElement: function(tag, classNames) {
         var el = document.createElement(tag);
         if(Array.isArray(classNames) === false) {
