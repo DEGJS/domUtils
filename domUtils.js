@@ -79,11 +79,17 @@ let domUtils = {
     },
 
     addCssClasses: function(el, cssClasses) {
+        if(Array.isArray(cssClasses) === false) {
+            cssClasses = [cssClasses];
+        }
         for(var i = 0; i < cssClasses.length; i++)
             el.classList.add(cssClasses[i]);
     },
 
     removeCssClasses: function(el, cssClasses) {
+        if(Array.isArray(cssClasses) === false) {
+            cssClasses = [cssClasses];
+        }
         for(var i = 0; i < cssClasses.length; i++)
             el.classList.remove(cssClasses[i]);
     }
