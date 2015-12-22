@@ -6,6 +6,7 @@ A utility library for working with the DOM.
 * **isDescendentByEl:** Same as isDescendantByClass, but checks element type rather than a class.
 * **isElement:** Check if a value is a DOM element.
 * **createElement:** Creates a new element, with optional classes.
+* **emptyElement:** Removes all children of an element.
 * **removeElements:** Removes elements (single or array).
 * **wrapElements:** Wrap one or multiple elements in another element.
 * **unwrapElements:** Unwrap elements within an element.

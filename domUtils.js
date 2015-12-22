@@ -49,6 +49,12 @@ let domUtils = {
         return el;
     },
 
+    emptyElement: function(parentEl) {
+        while (parentEl.firstChild) {
+            parentEl.removeChild(parentEl.firstChild);
+        }
+    },
+
     removeElements: function(els) {
         if (!Array.isArray(els)) {
             els = [els];
