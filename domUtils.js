@@ -40,7 +40,7 @@ let domUtils = {
 
     createElement: function(tag, classNames) {
         var el = document.createElement(tag);                
-        classNames = ensureArray(classNames);
+        classNames = this.ensureArray(classNames);
 
         classNames.forEach(function(className) {
             el.classList.add(className);    
@@ -55,7 +55,7 @@ let domUtils = {
     },
 
     removeElements: function(els) {
-        els = ensureArray(els);
+        els = this.ensureArray(els);
        
         els.forEach(function(el) {
             el.parentNode.removeChild(el);
@@ -63,7 +63,7 @@ let domUtils = {
     },
 
     wrapElements: function(elsToWrap, wrapperEl) {
-        elsToWrap = ensureArray(elsToWrap);
+        elsToWrap = this.ensureArray(elsToWrap);
         
         var firstElToWrap =  elsToWrap[0];
         firstElToWrap.parentNode.insertBefore(wrapperEl, firstElToWrap);
@@ -82,14 +82,14 @@ let domUtils = {
     },
 
     addCssClasses: function(el, cssClasses) {
-        cssClasses = ensureArray(cssClasses);
+        cssClasses = this.ensureArray(cssClasses);
 
         for(var i = 0; i < cssClasses.length; i++)
             el.classList.add(cssClasses[i]);
     },
 
     removeCssClasses: function(el, cssClasses) {
-        cssClasses = ensureArray(cssClasses);
+        cssClasses = this.ensureArray(cssClasses);
         
         for(var i = 0; i < cssClasses.length; i++)
             el.classList.remove(cssClasses[i]);
@@ -99,6 +99,7 @@ let domUtils = {
         if(Array.isArray(obj) === false) {
             return [obj];
         }
+        return obj;
     }
 
 };
