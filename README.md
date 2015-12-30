@@ -15,3 +15,4 @@ A utility library for working with the DOM.
 
 ## Revision History
 * **1.0.0:** First commit.
+* **1.0.1:** Consolidated common functionality

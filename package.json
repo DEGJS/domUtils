@@ -1,7 +1,15 @@
 {
   "name": "domUtils",
+  "version": "1.0.1",
+  "author": "DEG (http://degdigital.com)",
+  "repository": {
+        "type": "git",
+        "url": "https://github.com/DEGJS/domUtils.git"
+  },
   "jspm": {
   	"format": "es6",
-  	"registry": "jspm"
+  	"registry": "jspm",
+  	"main": "domUtils",
+  	"files": ["domUtils.js"]
   }
 }

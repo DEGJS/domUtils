@@ -39,10 +39,9 @@ let domUtils = {
     },
 
     createElement: function(tag, classNames) {
-        var el = document.createElement(tag);
-        if(Array.isArray(classNames) === false) {
-            classNames = [classNames];
-        }
+        var el = document.createElement(tag);                
+        classNames = ensureArray(classNames);
+
         classNames.forEach(function(className) {
             el.classList.add(className);    
         });
@@ -56,18 +55,16 @@ let domUtils = {
     },
 
     removeElements: function(els) {
-        if (!Array.isArray(els)) {
-            els = [els];
-        }
+        els = ensureArray(els);
+       
         els.forEach(function(el) {
             el.parentNode.removeChild(el);
         });
     },
 
     wrapElements: function(elsToWrap, wrapperEl) {
-        if(Array.isArray(elsToWrap) == false)
-            elsToWrap = [elsToWrap];
-
+        elsToWrap = ensureArray(elsToWrap);
+        
         var firstElToWrap =  elsToWrap[0];
         firstElToWrap.parentNode.insertBefore(wrapperEl, firstElToWrap);
 
@@ -85,19 +82,23 @@ let domUtils = {
     },
 
     addCssClasses: function(el, cssClasses) {
-        if(Array.isArray(cssClasses) === false) {
-            cssClasses = [cssClasses];
-        }
+        cssClasses = ensureArray(cssClasses);
+
         for(var i = 0; i < cssClasses.length; i++)
             el.classList.add(cssClasses[i]);
     },
 
     removeCssClasses: function(el, cssClasses) {
-        if(Array.isArray(cssClasses) === false) {
-            cssClasses = [cssClasses];
-        }
+        cssClasses = ensureArray(cssClasses);
+        
         for(var i = 0; i < cssClasses.length; i++)
             el.classList.remove(cssClasses[i]);
+    },
+
+    ensureArray: function(obj) {
+        if(Array.isArray(obj) === false) {
+            return [obj];
+        }
     }
 
 };
