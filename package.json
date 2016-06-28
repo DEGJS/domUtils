@@ -1,15 +1,34 @@
 {
-  "name": "domUtils",
-  "version": "1.0.1",
-  "author": "DEG (http://degdigital.com)",
-  "repository": {
+    "name": "domUtils",
+    "version": "1.0.2",
+    "description": "A utility library for working with the DOM.",
+    "keywords": [
+    	"DOM",
+        "DEGJS"
+    ],
+    "author": {
+        "name": "Aaron Ladage",
+        "email": "aladage@degdigital.com",
+        "url": "http://aaronladage.com"
+    },
+    "contributors": [
+        {
+            "name": "Ryan Heap",
+            "email": "rheap@degdigital.com"
+        }
+    ],
+    "license": "MIT",
+    "repository": {
         "type": "git",
         "url": "https://github.com/DEGJS/domUtils.git"
-  },
-  "jspm": {
-  	"format": "es6",
-  	"registry": "jspm",
-  	"main": "domUtils",
-  	"files": ["domUtils.js"]
-  }
+    },
+    "bugs": "https://github.com/DEGJS/domUtils/issues",
+    "jspm": {
+        "registry": "jspm",
+        "format": "es6",
+        "main": "domUtils.js",
+        "directories": {
+            "lib": "src"
+        }
+    }
 }
