@@ -1,5 +1,5 @@
 # domUtils
-Working with the browser's Document Object Model (DOM) via JavaScript has historically been harder than it should've been, filled with enough inconsistencies and browser bugs to drive even the best developer crazy. These challenges were a huge factor in the ubiquity of JavaScript helper libraries such as jQuery across the web.
+Working with the browser's Document Object Model (DOM) via JavaScript has historically been harder than it should be, filled with enough inconsistencies and browser bugs to drive even the best developer crazy. These challenges were a huge factor in the ubiquity of JavaScript helper libraries such as jQuery across the web.
 
 Fortunately, those days are largely behind us. Modern-day DOM interaction is simpler and more consistent, to the point where jQuery shouldn't be an assumed dependency anymore ([no, really](http://youmightnotneedjquery.com/)).
 
@@ -38,49 +38,51 @@ domUtils.removeElements(newEl); // Remove the new element from the DOM
 ### isElement(el)
 The isElement method tests a supplied value to see if it's a valid HTML element, and returns `true` or `false`.
 #### Parameters:
-##### el
+**el**  
 Type: `Element`  
 The potential element to test.
 
 ### createElement(nodeName, classNames)
 The createElement method creates and returns a new HTML element that can be inserted into the DOM.
 #### Parameters:
-##### nodeName
+**nodeName**   
 Type: `String`  
-The name of the new HTML element you want to create (i.e., 'div', 'li', etc.).
-##### classNames
+The name of the new HTML element you want to create (i.e., 'div', 'li', etc.).   
+
+**classNames**   
 Type: `String` or `Array`  
 An indivudal class name, or array of class names, that will be added to the returned element.
 
 ### emptyElements(els)
 The emptyElements method removes all child elements from the supplied list of HTML elements.
 #### Parameters:
-##### els
+**els**   
 Type: `Element` or `Array`   
 A single HTML element or an array of HTML elements that will be emptied.
 
 ### removeElements(els)
 The removeElements method removes all supplied HTML elements from the DOM.
 #### Parameters:
-##### els
+**els**   
 Type: `Element` or `Array`   
 A single HTML element or an array of HTML elements that will be removed.
 
 ### wrapElements(elsToWrap, wrapperEl)
 The wrapElements method wraps all supplied HTML elements within another supplied element.
 #### Parameters:
-##### elsToWrap
+**elsToWrap**   
 Type: `Element` or `Array`   
 A single HTML element or an array of HTML elements that will be wrapped by the `wrapperEl` element.
-##### wrapperEl
+
+**wrapperEl**   
 Type: `Element`   
 A single HTML element that will be wrapped around the supplied `elsToWrap` elements.
 
 ### unwrapElements(wrapperEls)
 The unwrapElements method removes a wrapping parent HTML element, leaving all of its child elements in place.
 #### Parameters:
-##### wrapperEls
-Type: `Element` or `Array` 
+**wrapperEls**   
+Type: `Element` or `Array`   
 A single HTML element or an array of HTML elements that will be removed, without removing child elements.
 
 
