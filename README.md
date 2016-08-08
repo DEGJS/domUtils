@@ -18,7 +18,7 @@ $ jspm install github:DEGJS/domUtils
 
 ### Importing individual domUtils methods:
 ```js
-import createElement from "DEGS/domUtils";
+import { createElement } from "DEGS/domUtils";
 
 let newEl = createElement('div', ['classNameA', 'classNameB']); // Create a new element
 document.body.appendChild(newEl); // Add the new element to the DOM
