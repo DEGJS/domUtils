@@ -29,6 +29,9 @@
         "main": "domUtils.js",
         "directories": {
             "lib": "src"
+        },
+        "dependencies": {
+            "DEGJS/objectUtils": "github:DEGJS/objectUtils@^2.0.0"
         }
     }
 }
