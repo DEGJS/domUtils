@@ -14,7 +14,7 @@ If you're already using the [JSPM package manager](http://jspm.io) for your proj
 $ jspm install github:DEGJS/domUtils
 ```
 
-JSPM automatically installs and configures this module's dependencies for you. However, if you manually install this plugin without using JSPM, you'll also need to manually install these dependencies:
+JSPM automatically installs and configures this module's dependencies for you. However, if you manually install this module without using JSPM, you'll also need to manually install these dependencies:
 
 * [objectUtils](https://github.com/DEGJS/objectUtils)
 
