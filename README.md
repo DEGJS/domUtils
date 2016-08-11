@@ -14,6 +14,10 @@ If you're already using the [JSPM package manager](http://jspm.io) for your proj
 $ jspm install github:DEGJS/domUtils
 ```
 
+JSPM automatically installs and configures this module's dependencies for you. However, if you manually install this plugin without using JSPM, you'll also need to manually install these dependencies:
+
+* [objectUtils](https://github.com/DEGJS/objectUtils)
+
 ## Usage
 
 ### Importing individual domUtils methods:
@@ -79,7 +83,6 @@ The unwrapElements method removes a wrapping parent HTML element, leaving all of
 #### wrapperEls
 Type: `Element` or `Array`   
 A single HTML element or an array of HTML elements that will be removed, without removing child elements.
-
 
 ## Browser Support
 
