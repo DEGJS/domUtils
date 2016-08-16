@@ -22,7 +22,7 @@ JSPM automatically installs and configures this module's dependencies for you. H
 
 ### Importing individual domUtils methods:
 ```js
-import { createElement } from "DEGS/domUtils";
+import { createElement } from "DEGJS/domUtils";
 
 let newEl = createElement('div', ['classNameA', 'classNameB']); // Create a new element
 document.body.appendChild(newEl); // Add the new element to the DOM
@@ -30,7 +30,7 @@ document.body.appendChild(newEl); // Add the new element to the DOM
 
 ### Importing all domUtils methods:
 ```js
-import * as domUtils from "DEGS/domUtils";
+import * as domUtils from "DEGJS/domUtils";
 
 let newEl = domUtils.createElement('div', ['classNameA', 'classNameB']); // Create a new element
 document.body.appendChild(newEl); // Add the new element to the DOM
