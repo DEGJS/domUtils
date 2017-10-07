@@ -71,7 +71,7 @@ A single HTML element that will have its content replaced.
 Type: `String`   
 The content that will replace the element's old content.
 #### position
-Type: `String`
+Type: `String`  
 Options: `beforebegin`, `afterbegin`, `beforeend`, `afterend`  
 Default: `afterbegin`    
 The position of the new content, based on the [insertAdjacentHTML](https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML) position options.
