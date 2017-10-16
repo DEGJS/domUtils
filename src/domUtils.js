@@ -13,18 +13,20 @@ function createElement(nodeName, classNames) {
     return el;
 }
 
-function emptyElements(els) {
-    els = ensureArray(els);
-    els.forEach(el => {
-        while (el.firstChild) {
-            el.removeChild(el.firstChild);
-        }
-    });
+function emptyElement(el) {
+    while (el.firstChild) {
+        el.removeChild(el.firstChild);
+    }
 }
 
-function replaceContent(el, newContent, position = 'afterbegin') {
-    emptyElements(el);
-    el.insertAdjacentHTML(position, newContent);
+function emptyElements(els) {
+    els = ensureArray(els);
+    els.forEach(el => emptyElement(el));
+}
+
+function replaceContent(el, newContent) {
+    emptyElement(el);
+    el.insertAdjacentHTML('afterbegin', newContent);
 }
 
 function removeElements(els) {

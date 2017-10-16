@@ -62,7 +62,7 @@ The emptyElements method removes all child elements from the supplied list of HT
 Type: `Element` or `Array`   
 A single HTML element or an array of HTML elements that will be emptied.
 
-### replaceContent(el, newContent, position)
+### replaceContent(el, newContent)
 The replaceContent method replaces an element's content with the supplied new content.
 #### el
 Type: `Element`   
@@ -70,11 +70,6 @@ A single HTML element that will have its content replaced.
 #### newContent
 Type: `String`   
 The content that will replace the element's old content.
-#### position
-Type: `String`  
-Options: `beforebegin`, `afterbegin`, `beforeend`, `afterend`  
-Default: `afterbegin`    
-The position of the new content, based on the [insertAdjacentHTML](https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML) position options.
 
 ### removeElements(els)
 The removeElements method removes all supplied HTML elements from the DOM.
