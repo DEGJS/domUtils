@@ -3,7 +3,7 @@
     "version": "2.1.1",
     "description": "A utility library for working with the DOM.",
     "keywords": [
-    	"DOM",
+        "DOM",
         "DEGJS"
     ],
     "author": {
@@ -33,5 +33,21 @@
         "dependencies": {
             "DEGJS/objectUtils": "github:DEGJS/objectUtils@^2.0.0"
         }
+    },
+    "scripts": {
+        "test": "jest",
+        "coverage": "jest --coverage && open coverage/index.html"
+    },
+    "jest": {
+        "coverageReporters": [
+            "html"
+        ]
+    },
+    "devDependencies": {
+        "babel-cli": "^6.26.0",
+        "babel-jest": "^22.0.4",
+        "babel-preset-env": "^1.6.1",
+        "expect": "^22.0.3",
+        "jest": "^22.0.4"
     }
 }
