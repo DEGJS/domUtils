@@ -1,4 +1,6 @@
 # domUtils
+[![Build Status](https://travis-ci.org/DEGJS/domUtils.svg?branch=master)](https://travis-ci.org/DEGJS/domUtils)
+
 Working with the browser's Document Object Model (DOM) via JavaScript has historically been harder than it should be, filled with enough inconsistencies and browser bugs to drive even the best developer crazy. These challenges were a huge factor in the ubiquity of JavaScript helper libraries such as jQuery across the web.
 
 Fortunately, those days are largely behind us. Modern-day DOM interaction is simpler and more consistent, to the point where jQuery shouldn't be an assumed dependency anymore ([no, really](http://youmightnotneedjquery.com/)).

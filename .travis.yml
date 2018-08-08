@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+- node
+cache:
+  directories:
+  - node_modules
+deploy:
+  provider: npm
+  email: scheul93@gmail.com
+  api_key:
+    secure: VlYkFj6In9Gi2JN2YDIJfty6gMYrlRljeegatuS7nNd/JwVH0JvZbbjIx3nj/QYOsIDfoYGEf1pdHvlr4cD2CD1jQj9zlCfCM2RG+Kk7Wyzwy0hg4M6Ye9KlSCX3lEpcXITufldpa/w6vVn1YtIZWE0u+qYFm8UocP7i3Z89zmX/tk1fDixXCKQCJ/QCSNlRkeXiN6g9Qj7c4b6HOXjqub1KZ4HePWfMQMBS8dVn0NMWz30OPmsyoXW2JLOXYOAZvskw1wEtMWw+YQ4VPJB6VMY0FKv+5RItqGuGfo+OhV9R6XLSDdYsnSNxGfCup632i+bYOKjocCDg9qnXyzX3iAA1xv6O9M5EcLTDai52dwHbqpzaEJeonuBP7f2c3qsK5rcxDZxw55+fzYYMua89ky0yFN9CKWL8mWWJosCm8fkYoCvxSs7uYDiHF+prdMEi53mQY8MYQERp0b63c3PC6SZR8GK3v9XzzCxs/8yKq1PfdvVpmBE7Ck3xiIXEgkzTX4AYCkjstsh5hqjy+KErzLm5ohupvIahOYwZgpRANBLOXT8ykEBV0eMxpVy1gqC+vEWLCfWZgppoXuxjnVl6gyYqLPLryV/6okys2Jobp4Sj2FGwhMZ7euRWukptfM6eolw3KTcEmtHtfQb33lyvQvZOU/xKROIASC6Z7I69hmU=
+  on:
+    branch: master
+    repo: DEGJS/domUtils

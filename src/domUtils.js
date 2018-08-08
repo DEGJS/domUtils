@@ -7,9 +7,11 @@ function isElement(o) {
 }
 
 function createElement(nodeName, classNames) {
-    classNames = ensureArray(classNames);
     const el = document.createElement(nodeName);
-    classNames.forEach(className => el.classList.add(className));
+    if (classNames) {
+        classNames = ensureArray(classNames);
+        classNames.forEach(className => el.classList.add(className));
+    }
     return el;
 }
 
