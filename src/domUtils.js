@@ -1,4 +1,9 @@
-import {ensureArray} from "DEGJS/objectUtils";
+function ensureArray(obj) {
+    if (Array.isArray(obj) === false) {
+		return [obj];
+	}
+	return obj;
+}
 
 function isElement(o) {
     return (

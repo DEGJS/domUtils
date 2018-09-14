@@ -8,23 +8,19 @@ Fortunately, those days are largely behind us. Modern-day DOM interaction is sim
 domUtils bridges the gap between vanilla JS and a full-fledged library. It's a collection of helper methods that can be imported individually to keep your codebase lean, or together when more are needed.
 
 ## Install
-domUtils is an ES6 module. Consequently, you'll need an ES6 transpiler ([Babel](https://babeljs.io) is a nice one) and a module loader ([SystemJS](https://github.com/systemjs/systemjs) will do the job) as part of your Javascript workflow.
+domUtils is an ES6 module. Consequently, you'll need an ES6 transpiler ([Babel](https://babeljs.io) is a nice one) as part of your Javascript workflow.
 
-If you're already using the [JSPM package manager](http://jspm.io) for your project, you can install domUtils with the following command:
+If you're already using NPM for your project, you can install domUtils with the following command:
 
 ```
-$ jspm install github:DEGJS/domUtils
+$ npm install @degjs/dom-utils
 ```
-
-JSPM automatically installs and configures this module's dependencies for you. However, if you manually install this module without using JSPM, you'll also need to manually install these dependencies:
-
-* [objectUtils](https://github.com/DEGJS/objectUtils)
 
 ## Usage
 
 ### Importing individual domUtils methods:
 ```js
-import { createElement } from "DEGJS/domUtils";
+import { createElement } from "@degjs/dom-utils";
 
 let newEl = createElement('div', ['classNameA', 'classNameB']); // Create a new element
 document.body.appendChild(newEl); // Add the new element to the DOM
@@ -32,7 +28,7 @@ document.body.appendChild(newEl); // Add the new element to the DOM
 
 ### Importing all domUtils methods:
 ```js
-import * as domUtils from "DEGJS/domUtils";
+import * as domUtils from "@degjs/dom-utils";
 
 let newEl = domUtils.createElement('div', ['classNameA', 'classNameB']); // Create a new element
 document.body.appendChild(newEl); // Add the new element to the DOM
