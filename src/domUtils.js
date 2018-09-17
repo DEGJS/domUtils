@@ -1,4 +1,4 @@
-import {ensureArray} from "DEGJS/objectUtils";
+import {ensureArray} from '@degjs/object-utils';
 
 function isElement(o) {
     return (

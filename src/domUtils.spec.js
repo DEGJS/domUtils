@@ -1,4 +1,4 @@
-jest.mock("DEGJS/objectUtils");
+jest.mock("@degjs/object-utils");
 import {
 	createElement,
 	emptyElements,
