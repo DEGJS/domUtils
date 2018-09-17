@@ -54,5 +54,8 @@
         "useTabs": true,
         "tabWidth": 4,
         "bracketSpacing": false
+    },
+    "dependencies": {
+        "@degjs/object-utils": "^3.0.0"
     }
 }

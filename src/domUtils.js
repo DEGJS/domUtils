@@ -1,9 +1,4 @@
-function ensureArray(obj) {
-    if (Array.isArray(obj) === false) {
-		return [obj];
-	}
-	return obj;
-}
+import {ensureArray} from '@degjs/object-utils';
 
 function isElement(o) {
     return (
