@@ -1,5 +1,5 @@
 # domUtils
-[![Build Status](https://travis-ci.org/DEGJS/domUtils.svg?branch=master)](https://travis-ci.org/DEGJS/domUtils)
+![Run Tests](https://github.com/DEGJS/domUtils/workflows/Run%20Tests/badge.svg)
 
 Working with the browser's Document Object Model (DOM) via JavaScript has historically been harder than it should be, filled with enough inconsistencies and browser bugs to drive even the best developer crazy. These challenges were a huge factor in the ubiquity of JavaScript helper libraries such as jQuery across the web.
 

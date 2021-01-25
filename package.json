@@ -1,6 +1,6 @@
 {
     "name": "@degjs/dom-utils",
-    "version": "3.0.0",
+    "version": "3.0.1",
     "description": "A utility library for working with the DOM.",
     "keywords": [
         "DOM",
@@ -23,7 +23,7 @@
         "url": "https://github.com/DEGJS/domUtils.git"
     },
     "files": [
-        "src"
+        "src/domUtils.js"
     ],
     "main": "src/domUtils.js",
     "bugs": "https://github.com/DEGJS/domUtils/issues",
@@ -38,16 +38,23 @@
     },
     "babel": {
         "presets": [
-            "env"
+            [
+                "@babel/preset-env",
+                {
+                    "targets": {
+                        "node": "current"
+                    }
+                }
+            ]
         ]
     },
     "publishConfig": {
         "access": "public"
     },
     "devDependencies": {
-        "babel-core": "^6.26.3",
-        "babel-env": "^2.4.1",
-        "jest": "^23.4.2",
+        "@babel/core": "^7.12.10",
+        "@babel/preset-env": "^7.12.10",
+        "jest": "^26.6.3",
         "prettier": "^1.14.0"
     },
     "prettier": {
